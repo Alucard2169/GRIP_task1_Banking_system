@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Alucard2169",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "dotenv": "^16.0.2",
+    "mongodb": "^4.9.1",
+    "mongoose": "^6.6.0"
+  }
+}
