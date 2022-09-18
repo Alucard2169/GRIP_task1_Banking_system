@@ -1,0 +1,85 @@
+.details {
+    margin-top: 5rem;
+    display: flex;
+    padding: 1rem;
+
+    .transfer {
+        background-color: greenyellow;
+        color: #151515;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 1.1rem;
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        margin-left: auto;
+        height: fit-content;
+        transition: filter 200ms ease-in;
+
+    }
+
+    .transfer:hover {
+        background-color: #151515;
+        color: greenyellow;
+        border: 1px greenyellow solid;
+    }
+
+    .info {
+        transition: filter 200ms ease-in;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 50%;
+        border: 1px white solid;
+        align-items: center;
+        border: 1px greenyellow solid;
+        padding: 0 1rem;
+
+        p,
+        span {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            background-color: greenyellow;
+            color: #1E1E1E;
+            width: fit-content;
+            border-radius: 10px;
+            padding: .5rem 1rem;
+        }
+
+        span {
+            font-family: 'Roboto', sans-serif;
+            color: greenyellow;
+            border-left: 1px greenyellow solid;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .details {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+
+        .info {
+            min-width: 90%;
+            margin-left: -.9rem;
+            margin-top: 4rem;
+        }
+
+        .transfer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: fit-content;
+        }
+    }
+}

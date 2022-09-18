@@ -1,0 +1,56 @@
+ .user {
+     border: 1px greenyellow solid;
+     display: grid;
+     grid-template-columns: 10% 60% 20% 10%;
+     height: 4rem;
+
+     .serial,
+     .name,
+     .branchCode,
+     img,
+     .headerHead {
+         height: 100%;
+         padding-left: 1rem;
+         display: flex;
+         align-items: center;
+         text-align: left;
+         border-right: 1px greenyellow solid;
+         margin-top: 0;
+         font-size: 1.1rem;
+         color: white;
+     }
+
+     .headerHead {
+         font-weight: 800;
+     }
+
+
+
+     img {
+         border: none;
+         padding-left: 2rem;
+     }
+
+     img {
+         width: 2rem;
+     }
+ }
+
+ @media only screen and(max-width: 500px) {
+
+     .user {
+         grid-template-columns: 15% 50% 20% 15%;
+
+         .header,
+         .headerHead {
+             font-size: .8rem;
+             text-align: center;
+         }
+
+         img {
+             width: 1.5rem;
+             padding-left: .8rem;
+         }
+
+     }
+ }

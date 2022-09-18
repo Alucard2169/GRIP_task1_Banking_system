@@ -1,0 +1,39 @@
+.customList {
+    height: 100vh;
+    max-width: 100%;
+}
+
+.customHead {
+    display: block;
+    position: absolute;
+    top: 10rem;
+    left: 14rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.customers {
+    width: 70%;
+    border: 1px greenyellow solid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    margin: 20rem auto 1rem;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .customList {
+
+        .customHead {
+            top: 10rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .customers {
+            width: 90%;
+        }
+    }
+}

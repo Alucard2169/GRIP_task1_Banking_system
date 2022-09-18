@@ -1,0 +1,127 @@
+.homepage {
+  max-width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.left {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left .heading {
+  position: relative;
+  width: 80%;
+}
+
+.left .heading .mainHead {
+  width: 100%;
+}
+
+.left .heading .strokeHead {
+  top: 3.7rem;
+  right: 2rem;
+  width: 18rem;
+  position: absolute;
+}
+
+.left .tagPara {
+  width: 70%;
+  text-align: left;
+  margin-left: -4rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.right {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right .viewAll {
+  background-color: greenyellow;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  border: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .homepage {
+    overflow-x: hidden;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  .homepage .left {
+    min-width: 100%;
+    position: relative;
+  }
+  .homepage .left .heading {
+    width: 15rem;
+  }
+  .homepage .left .strokeHead {
+    width: 7rem;
+    top: 6.1rem;
+    left: 7.2rem;
+  }
+  .homepage .left .tagPara {
+    position: absolute;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 17rem;
+  }
+  .homepage .right {
+    width: 100%;
+  }
+  .homepage .right .viewAll {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=homepage.css.map */

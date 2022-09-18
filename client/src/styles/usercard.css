@@ -1,0 +1,58 @@
+.user {
+  border: 1px greenyellow solid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 60% 20% 10%;
+      grid-template-columns: 10% 60% 20% 10%;
+  height: 4rem;
+}
+
+.user .serial,
+.user .name,
+.user .branchCode,
+.user img,
+.user .headerHead {
+  height: 100%;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  border-right: 1px greenyellow solid;
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.user .headerHead {
+  font-weight: 800;
+}
+
+.user img {
+  border: none;
+  padding-left: 2rem;
+}
+
+.user img {
+  width: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .user {
+    -ms-grid-columns: 15% 50% 20% 15%;
+        grid-template-columns: 15% 50% 20% 15%;
+  }
+  .user .header,
+  .user .headerHead {
+    font-size: .8rem;
+    text-align: center;
+  }
+  .user img {
+    width: 1.5rem;
+    padding-left: .8rem;
+  }
+}
+/*# sourceMappingURL=usercard.css.map */
