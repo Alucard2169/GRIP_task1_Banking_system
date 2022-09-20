@@ -6,6 +6,7 @@ live preview: https://vast-gold-meerkat-suit.cyclic.app/
 ## STACK used
 
 > MERN STACK
+> 
  > MongoDB as Database
  > 
  > ExpressJS
