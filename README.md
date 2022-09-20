@@ -7,7 +7,10 @@ live preview: https://vast-gold-meerkat-suit.cyclic.app/
 
 > MERN STACK
  > MongoDB as Database
+ > 
  > ExpressJS
+ > 
  > React
+ > 
  > NodeJS
  
