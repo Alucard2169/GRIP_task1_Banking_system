@@ -1,0 +1,28 @@
+.heading {
+    position: relative;
+    width: 80%;
+
+    .mainHead {
+        width: 100%;
+    }
+
+    .strokeHead {
+        top: 3.7rem;
+        right: 2rem;
+        width: 18rem;
+        position: absolute;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .heading {
+        width: 15rem;
+    }
+
+    .strokeHead {
+        width: 2rem;
+        top: 6.1rem;
+        left: 7.2rem;
+    }
+}

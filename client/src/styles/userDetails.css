@@ -1,95 +1,69 @@
 .details {
   margin-top: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1rem;
 }
-
 .details .transfer {
   background-color: greenyellow;
   color: #151515;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 1.1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
   cursor: pointer;
   border: none;
   margin-left: auto;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-transition: -webkit-filter 200ms ease-in;
-  transition: -webkit-filter 200ms ease-in;
   transition: filter 200ms ease-in;
-  transition: filter 200ms ease-in, -webkit-filter 200ms ease-in;
 }
-
 .details .transfer:hover {
   background-color: #151515;
   color: greenyellow;
   border: 1px greenyellow solid;
 }
-
 .details .info {
-  -webkit-transition: -webkit-filter 200ms ease-in;
-  transition: -webkit-filter 200ms ease-in;
   transition: filter 200ms ease-in;
-  transition: filter 200ms ease-in, -webkit-filter 200ms ease-in;
   margin: auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   width: 50%;
   border: 1px white solid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 1px greenyellow solid;
   padding: 0 1rem;
 }
-
 .details .info p,
 .details .info span {
   font-size: 1.2rem;
 }
-
 .details .info p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: greenyellow;
   color: #1E1E1E;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 10px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
-
 .details .info span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: greenyellow;
   border-left: 1px greenyellow solid;
 }
 
 @media only screen and (max-width: 500px) {
   .details {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
     position: relative;
   }
   .details .info {
     min-width: 90%;
-    margin-left: -.9rem;
+    margin-left: -0.9rem;
     margin-top: 4rem;
   }
   .details .transfer {
@@ -98,9 +72,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
-}
-/*# sourceMappingURL=userDetails.css.map */
+}/*# sourceMappingURL=userDetails.css.map */

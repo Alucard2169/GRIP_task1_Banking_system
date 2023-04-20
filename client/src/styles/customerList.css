@@ -15,12 +15,9 @@
 .customers {
   width: 70%;
   border: 1px greenyellow solid;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
   margin: 20rem auto 1rem;
 }
 
@@ -34,5 +31,4 @@
   .customList .customers {
     width: 90%;
   }
-}
-/*# sourceMappingURL=customerList.css.map */
+}/*# sourceMappingURL=customerList.css.map */
