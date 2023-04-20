@@ -1,4 +1,5 @@
 const { Customer } = require("./model/customerModel");
+const mongoose = require("mongoose");
 
 const getAllCustomer = async (req, res) => {
   try {
@@ -16,12 +17,11 @@ const getCustomerById = async (req, res) => {
   const id = req.params.id;
 
   try {
-    const user = Customer.findById(id);
+    const user = await Customer.findById(id);
+    console.log(user);
     res.status(200).json(user);
-  } catch {
-    (err) => {
-      res.status(500).json(err);
-    };
+  } catch (err) {
+    res.status(500).json(err);
   }
 };
 
